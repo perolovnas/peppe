@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Per Olov | UX | Webbutveckling</title>
+</head>
+<body>
+    <main class="main">
+        <section class="section one">
+            <div class="overflow-wrapper">
+                <h1 class="welcome-text one">Hej!</h1>
+                <h2 class="welcome-text two">Jag heter Per Olov</h2>
+                <h3 class="welcome-text third">Jag skapar webbupplevelser.</h3>
+            </div>
+        </section>
+        <section class="section two">
+            <div class="inner">
+                <div class="media-text-wrapper">
+                    <div class="content-wrapper">
+                        <h2>Inte din vanliga designer...</h2>
+                        <p>
+                            Stöpt och grundad från design och layout har jag tagit mig an rollen som frontendutvecklare nu i drygt 7 år.
+                        </p>
+                        <p>
+                            Mycket hinner hända på 7 år, jag har leasat en KIA, köpt hus, 2 katter, gift mig och skaffat barn. Jag har också
+                            under dessa 7 år som webb-nisse lärt mig vad mina styrkor och svagheter inom branchen är, t.ex att backendutveckling och jag Inte
+                            hör ihop, att UX och Användarvänlighet på webben är mer intressant än hur en node-app eller "foreach loop" fungerar.
+                        </p>
+                        <p>
+                            Jag är redo att gå vidare, att stiga fram från bakom kulisserna till den stora scenen och själv få bestämma hur en webb / app
+                            ska konsumeras. Det är ju det jag är bra på, att fängsla och kommunicera/hjälpa andra människor.
+                        </p>
+                        <p>
+                            Jag tror med min erfarenhet av 7 år som webbutvecklare har hjälpt mig förstå UX/UI bättre. Jag tror också jag
+                            är en stor tillgång i ett team där utvecklare ingår då jag kan förstå dem på ett sätt som många andra
+                            designers inte kan.
+                        </p>
+                        <p>
+                            Jag är inte din vanliga designer.
+                        </p>
+                    </div>
+                    <img src="./images/peppe1.jpeg" alt="peppe">
+                </div>
+            </div>            
+        </section>
+
+        <template data-supplier-template>
+            <div class="card">
+                <div class="logo-wrapper">
+                    <img alt="logo" src="" data-logo class="logo"/>
+                </div>
+                <h4 data-title class="title"></h4>
+                <p data-body class="body"></p>
+                <div class="link">
+                    <!-- Hårdkodat -->
+                    <a data-link target="_blank" href="/">
+                        Till företagets hemsida
+                    </a>
+                </div>
+            </div>
+        </template>
+        
+
+        <div class="case-wrapper">
+            <!-- <section class="section third">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <img src="./images/Företagshälsovården.png" alt="företagshälsovården">
+                        <div class="content-wrapper">
+                            <h2>Företagshälsovården</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section class="section fourth">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <div class="content-wrapper">
+                            <h2>JEMAB</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                        <img src="./images/jemab.png" alt="jemab">
+                    </div>
+                </div>            
+            </section>
+            <section class="section fifth">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <img src="./images/reachhemservice.png" alt="reachhemservice">
+                        <div class="content-wrapper">
+                            <h2>Reach Hemservice</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section class="section sixth">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <div class="content-wrapper">
+                            <h2>Isakssons</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                        <img src="./images/isakssons.png" alt="isakssons">
+                    </div>
+                </div>            
+            </section>
+            <section class="section seventh">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <img src="./images/opgsthlm.png" alt="opg sthlm">
+                        <div class="content-wrapper">
+                            <h2>OPG Stockholm</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section class="section eight">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <div class="content-wrapper">
+                            <h2>Infidel Comics</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                        <img src="./images/infidelcomics.png" alt="infidel comics">
+                    </div>
+                </div>            
+            </section>
+            <section class="section nine">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <img src="./images/egmemory.png" alt="eg memory">
+                        <div class="content-wrapper">
+                            <h2>EG Memory</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section class="section ten">
+                <div class="inner">
+                    <div class="media-text-wrapper">
+                        <img src="./images/growingleaders.png" alt="growing leaders">
+                        <div class="content-wrapper">
+                            <h2>Growing Leaders</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis necessitatibus quia provident at laudantium numquam nobis impedit in porro.</p>
+                            <a href="/" class="button">Besök sidan</a>
+                        </div>
+                    </div>
+                </div>            
+            </section> -->
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/scrollAnimation.js"></script>
+    <script src="/scripts/fetch.js"></script>
+</body>
+</html>

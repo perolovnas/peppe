@@ -1,6 +1,17 @@
 console.log('lets go');
 
 $(function() {
+
+    $.getJSON('data/data.json', function(data){ 
+        $.each(data,function(idx, obj){ 
+            $.each(obj, function(key, value){
+                // console.log(value);
+                $("#case-wrapper").append(
+                    value
+                );
+            });
+        });
+    });
     
     // // First animation
     // setTimeout(function() { 
@@ -42,3 +53,24 @@ $(function() {
     // }, 1000);
 
 });
+
+const caseItem = document.querySelectorAll('.image-wrapper');
+
+caseItem.forEach((child, index) => {
+  child.addEventListener('mouseenter', () => handleMouseEnter(event));
+  child.addEventListener('mouseleave', () => handleMouseLeave()) 
+});
+
+function handleMouseEnter(event) {
+  caseItem.forEach(child => {
+    if (event.target === child) return;
+    
+    child.classList.add('is-dimmed');
+  })
+}
+
+function handleMouseLeave() {
+  caseItem.forEach(child => {
+    child.classList.remove('is-dimmed');
+  })
+}

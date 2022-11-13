@@ -46,22 +46,29 @@ main.main .inner .top-wrapper {
 main.main .inner .top-wrapper:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 200px;
   left: 0;
   right: 0;
-  margin: 150px auto;
-  width: 960px;
-  height: 600px;
+  margin: 0vmin auto;
+  width: 100%;
+  height: 0;
+  padding-top: 56.66%;
   background: url(/images/peppe1.jpeg) no-repeat center;
   background-size: contain;
   z-index: -1;
   filter: grayscale(30%);
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: soft-light;
   opacity: 1;
+}
+@media (max-width: 1920px) {
+  main.main .inner .top-wrapper:before {
+    top: 100px;
+  }
 }
 @media (max-width: 1024px) {
   main.main .inner .top-wrapper:before {
     width: 90%;
+    top: 50px;
   }
 }
 @media (max-width: 1440px) {
@@ -89,10 +96,15 @@ main.main .inner .case-wrapper {
   position: relative;
   z-index: 999;
 }
+@media (max-width: 768px) {
+  main.main .inner .case-wrapper {
+    margin: 40vh 0 0 0;
+  }
+}
 main.main .inner .case-wrapper .image-wrapper {
   width: calc(33.33% - 2em);
   margin: 1em;
-  background: #dee6dd;
+  background: rgba(222, 230, 221, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 2em;
   opacity: 1;
@@ -160,6 +172,9 @@ main.main .inner .case-wrapper .image-wrapper.tallberggk * {
 main.main .inner .case-wrapper .image-wrapper img {
   width: 100%;
   height: auto;
+}
+main.main .inner .case-wrapper .image-wrapper.is-dimmed {
+  opacity: 0.8 !important;
 }
 main.main .inner .content-wrapper {
   display: block;

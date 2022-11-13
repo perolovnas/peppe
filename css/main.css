@@ -174,7 +174,7 @@ main.main .inner .case-wrapper .image-wrapper img {
   height: auto;
 }
 main.main .inner .case-wrapper .image-wrapper.is-dimmed {
-  opacity: 0.8 !important;
+  opacity: 0.95 !important;
 }
 main.main .inner .content-wrapper {
   display: block;

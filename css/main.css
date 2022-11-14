@@ -98,7 +98,12 @@ main.main .inner .case-wrapper {
 }
 @media (max-width: 768px) {
   main.main .inner .case-wrapper {
-    margin: 40vh 0 0 0;
+    margin-top: calc(100vh - 300px);
+  }
+}
+@media (max-width: 600px) {
+  main.main .inner .case-wrapper {
+    margin-top: calc(100vh - 200px);
   }
 }
 main.main .inner .case-wrapper .image-wrapper {
